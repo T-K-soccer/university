@@ -142,10 +142,12 @@ table {
   border-spacing: 0;
 }
 a {
-  transition: opacity 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
 }
 a:hover {
   opacity: 0.8;
+  color: #d69649;
 }
 #responsive-header {
   display: none;
@@ -278,6 +280,10 @@ a:hover {
 #nav-content .list-cv {
   background-color: #d69649;
 }
+
+#nav-content .list-cv a:hover {
+  color: #1d2d43;
+}
 #nav-input:checked ~ #nav-close {
   display: block; /*カバーを表示*/
   opacity: 0.5;
@@ -316,7 +322,7 @@ a:hover {
 }
 .header-list li::after {
   position: absolute;
-  top: 10px;
+  top: 25px;
   right: 10px;
   color: #ffffff;
   content: "";
@@ -351,6 +357,10 @@ a:hover {
 .cv a {
   background-color: #d69649;
   padding: 10px;
+  transition: all 0.3s;
+}
+.cv a:hover {
+  color: #1d2d43;
 }
 main {
   width: calc(100% - 200px);
@@ -492,7 +502,7 @@ main {
   transition: all 0.4s;
 }
 #about .item:hover {
-  background-color: #034880;
+  background-color: #1d3455;
 }
 #about .item > a {
   text-decoration: none;
